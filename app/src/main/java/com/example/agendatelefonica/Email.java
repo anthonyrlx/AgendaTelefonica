@@ -6,18 +6,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class Email extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_emails);
     }
 
     public void onClickButtons(View v){
         Intent newIntent = new Intent();
-        if(v.getId() == R.id.buttonEmail){
-            newIntent = new Intent(getApplicationContext(), Email.class);
+        if(v.getId() == R.id.button){
+            newIntent = new Intent(getApplicationContext(), MainActivity.class);
         }
         else if(v.getId() == R.id.buttonSobre){
             newIntent = new Intent(getApplicationContext(), Sobre.class);

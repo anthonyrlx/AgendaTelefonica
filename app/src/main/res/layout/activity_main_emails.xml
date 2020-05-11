@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Email">
 
     <Button
         android:id="@+id/button"
         android:layout_width="140dp"
         android:layout_height="73dp"
-        android:background="@android:color/holo_red_dark"
+        android:background="#4E4545"
+        android:onClick="onClickButtons"
         android:text="Contatos"
         android:textColor="@android:color/white"
         android:textSize="20sp"
@@ -21,8 +22,7 @@
         android:id="@+id/buttonEmail"
         android:layout_width="140dp"
         android:layout_height="73dp"
-        android:background="#4E4545"
-        android:onClick="onClickButtons"
+        android:background="@android:color/holo_red_dark"
         android:text="Emails"
         android:textColor="@android:color/white"
         android:textSize="20sp"
