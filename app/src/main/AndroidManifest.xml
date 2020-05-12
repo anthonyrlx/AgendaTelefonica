@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.agendatelefonica">
+<<<<<<< HEAD
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
 
+=======
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+>>>>>>> 01639286383b7184e2b71179818b6ba5c4b9a979
     <application
         android:usesCleartextTraffic="true"
         android:allowBackup="true"
@@ -15,6 +21,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".Email" />
         <activity android:name=".Sobre" />
         <activity android:name=".MainActivity">

@@ -42,6 +42,7 @@
         app:layout_constraintStart_toEndOf="@+id/buttonEmail"
         app:layout_constraintTop_toTopOf="parent" />
 
+<<<<<<< HEAD
     <ListView
         android:id="@+id/list"
         android:layout_width="fill_parent"
@@ -58,5 +59,17 @@
         android:text="Toque em Contatos para atualizar a lista..."
         app:layout_constraintTop_toBottomOf="@+id/button"
         tools:layout_editor_absoluteX="72dp" />
+=======
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="315dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="107dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+>>>>>>> 01639286383b7184e2b71179818b6ba5c4b9a979
 
 </androidx.constraintlayout.widget.ConstraintLayout>

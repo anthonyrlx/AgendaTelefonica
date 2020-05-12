@@ -28,6 +28,15 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 public class MainActivity extends AppCompatActivity {
     private ProgressDialog progressDialog ;
     private ListView list;
@@ -96,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(newIntent);
     }
 
+<<<<<<< HEAD
 
     public void mostraAgenda(String strjson){
         //recebe uma String com os dados do JSON
@@ -191,4 +201,49 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
 
+=======
+    public void mostrarJSON(String strjson){
+        String data = "";
+        try{
+            JSONObject objRaiz = new JSONObject(strjson);
+            JSONArray jsonArray = objRaiz.optJSONArray("listacontatos");
+            for(int i = 0; i <= jsonArray.length(); i++){
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                String id = jsonObject.optString("id");
+                String nomecontato = jsonObject.optString("nomecontato  ");
+                String email = jsonObject.optString("email");
+                String endereco = jsonObject.optString("endereco");
+                String genero = jsonObject.optString("genero");
+                String celular = jsonObject.optString("celular");
+                data += "\n id = " + id + ", email = " + email + ", nome" ;
+            }
+        } catch (Exception ex){
+
+        }
+    }
+
+    private String downloadJSON (String myurl) throws IOException {
+        InputStream is = null; String respostaHttp = "";
+        HttpURLConnection conn = null; InputStream in = null;
+        ByteArrayOutputStream bos = null; int len;
+        try {
+            URL u = new URL(myurl);
+            conn = (HttpURLConnection) u.openConnection();
+            conn.setConnectTimeout(7000); // 7 segundos de timeout
+            conn.setRequestMethod("GET");
+            conn.setDoInput(true);
+            conn.connect();
+            in = conn.getInputStream();
+            bos = new ByteArrayOutputStream();
+            byte[] buffer = new byte[1024];
+            while ((len = in.read(buffer)) > 0) {
+                bos.write(buffer, 0, len);
+            }
+            respostaHttp = bos.toString("UTF-8");
+            return respostaHttp;
+        } catch (Exception ex) {
+            return ex.toString();
+        } finally { if (in != null) in.close(); }
+    }
+>>>>>>> 01639286383b7184e2b71179818b6ba5c4b9a979
 }
