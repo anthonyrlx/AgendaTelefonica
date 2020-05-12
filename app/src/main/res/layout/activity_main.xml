@@ -43,6 +43,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ListView
         android:id="@+id/list"
         android:layout_width="fill_parent"
@@ -72,4 +73,6 @@
         app:layout_constraintTop_toBottomOf="@+id/button" />
 >>>>>>> 01639286383b7184e2b71179818b6ba5c4b9a979
 
+=======
+>>>>>>> parent of 0163928... criando pagina sobre
 </androidx.constraintlayout.widget.ConstraintLayout>

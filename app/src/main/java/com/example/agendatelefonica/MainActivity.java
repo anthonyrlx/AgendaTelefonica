@@ -28,15 +28,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-
 public class MainActivity extends AppCompatActivity {
     private ProgressDialog progressDialog ;
     private ListView list;
@@ -104,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
         }
         startActivity(newIntent);
     }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 
@@ -246,4 +238,6 @@ public class MainActivity extends AppCompatActivity {
         } finally { if (in != null) in.close(); }
     }
 >>>>>>> 01639286383b7184e2b71179818b6ba5c4b9a979
+=======
+>>>>>>> parent of 0163928... criando pagina sobre
 }
