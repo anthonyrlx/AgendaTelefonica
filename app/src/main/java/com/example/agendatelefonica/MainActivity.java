@@ -1,5 +1,4 @@
 package com.example.agendatelefonica;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
@@ -95,9 +94,7 @@ public class MainActivity extends AppCompatActivity {
         }
         startActivity(newIntent);
     }
-<<<<<<< HEAD
 
-<<<<<<< HEAD
 
     public void mostraAgenda(String strjson){
         //recebe uma String com os dados do JSON
@@ -193,7 +190,6 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
 
-=======
     public void mostrarJSON(String strjson){
         String data = "";
         try{
@@ -237,7 +233,5 @@ public class MainActivity extends AppCompatActivity {
             return ex.toString();
         } finally { if (in != null) in.close(); }
     }
->>>>>>> 01639286383b7184e2b71179818b6ba5c4b9a979
-=======
->>>>>>> parent of 0163928... criando pagina sobre
+
 }
