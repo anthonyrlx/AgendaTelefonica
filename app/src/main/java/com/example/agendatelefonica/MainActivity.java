@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
     public void mostraAgenda(String strjson){
         //recebe uma String com os dados do JSON
         String data = "";
+        arrayList.clear();
         try {
             JSONObject objRaiz = new JSONObject(strjson);
             JSONArray jsonArray = objRaiz.getJSONArray("listacontatos");
