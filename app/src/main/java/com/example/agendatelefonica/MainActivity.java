@@ -177,19 +177,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-//
-//    public void onClick(View view) {
-//
-//        String telefone = campoTelefone.getText().toString();
-//
-//        Uri uri = Uri.parse("tel:" + telefone);
-//        Intent intent = new Intent(Intent.ACTION_DIAL,uri);
-//
-//        startActivity(intent);
-//
-//
-//    }
-
 
     public void mostrarJSON(String strjson){
         String data = "";
